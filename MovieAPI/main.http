@@ -1,0 +1,36 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+GET https://localhost:7158/movies
+
+
+###
+
+GET https://localhost:7158/movies/7
+###
+
+POST https://localhost:7158/movies
+Content-Type:application/json
+
+{
+    "Name": "The Matrix 3",
+    "Price": 30,
+    "ReleaseDate": "2003-03-31",
+    "GenreId": 2
+}
+
+###
+
+PUT https://localhost:7158/movies/7
+Content-Type:application/json
+
+{
+    "Name": "The Matrix 3",
+    "Price": 29.99,
+    "ReleaseDate": "2013-03-31"
+}
+
+###
+
+DELETE https://localhost:7158/movies/7
+###
+
+GET https://localhost:7158/genres
